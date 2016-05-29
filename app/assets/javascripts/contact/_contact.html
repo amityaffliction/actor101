@@ -1,0 +1,71 @@
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                <span class="mdl-layout__title">Simple portfolio website</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link" href="#/portfolio">포트폴리오</a>
+                    <a class="mdl-navigation__link" href="#/recruit">구인구직</a>
+                    <a class="mdl-navigation__link" href="#/profile">프로필</a>
+                    <a class="mdl-navigation__link is-active" href="#/contact">홍보하기</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link" href="#/portfolio">포트폴리오</a>
+                <a class="mdl-navigation__link" href="#/recuit">구인구직</a>
+                <a class="mdl-navigation__link" href="#/profile">프로필</a>
+                <a class="mdl-navigation__link is-active" href="#/contact">홍보하기</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width portfolio-contact">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Contact</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="contact-image" src=" images/contact-image.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p>
+                            등록되어 있는 배우와 모델들에게 오디션이나 구인구직 관련 정보를 보낼 수 있습니다!
+                        </p>
+                        <p>
+                            모집기간과 모집인원과 같은 구체적인 내용을 포함하여 적어주시기 바랍니다.
+                        </p>
+                          <form ng-submit="addRecruit()">
+
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <input type="text" class="mdl-textfield__input" placeholder="제목" ng-model="title"></input>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <input type="text" class="mdl-textfield__input" placeholder="이메일" ng-model="email"></input>
+                            </div>                            
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea ng-model="content" class="mdl-textfield__input" rows="5" placeholder="상세내용"></textarea>
+                            </div>
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">모집 쏘아올리기</button>
+                          </form>
+
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Simple portfolio website</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>

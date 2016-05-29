@@ -67,4 +67,8 @@ Rails.application.routes.draw do
       put '/upvote' => 'posts#upvote'
     end
   end
+
+  resources :recruits, only: [:create, :index, :destroy]
+
+  get '*path', to: 'application#angular'
 end

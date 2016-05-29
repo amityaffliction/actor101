@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'angular_rails_csrf'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -30,9 +31,5 @@ gem 'spring',      group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'angular-rails-templates'
-# Rails has csrf protection enabled by default,
-# and Angular isn't sending the token to Rails when we're
-# trying to add a post. This gem fixes that
-gem 'angular_rails_csrf'
 
 gem 'devise', '~> 3.4.0'

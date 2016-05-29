@@ -1,4 +1,4 @@
-var myApp = angular.module('flapperNews', ['ui.router', 'templates', 'Devise']);
+var myApp = angular.module('flapperNews', ['ui.router', 'templates', 'Devise', 'youtube-embed']);
 
 myApp.config(['$stateProvider','$urlRouterProvider',
   function($stateProvider, $urlRouterProvider) {
@@ -9,6 +9,29 @@ myApp.config(['$stateProvider','$urlRouterProvider',
       controller: 'MainCtrl',
       resolve: { postPromise: ['posts', function(posts){
                 return posts.getAll();
+              }]}
+    })
+    .state('portfolio', {
+      url: '/portfolio',
+      templateUrl: 'portfolio/_portfolio.html',
+      controller: 'PortfolioCtrl'
+    })
+    .state('profile', {
+      url: '/profile',
+      templateUrl: 'profile/_profile.html',
+      controller: 'ProfileCtrl'
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: 'contact/_contact.html',
+      controller: 'ContactCtrl'
+    })
+    .state('recruit', {
+      url: '/recruit',
+      templateUrl: 'recruit/_recruit.html',
+      controller: 'RecruitCtrl',
+      resolve: { recruitPromise: ['recruitService', function(recruitService){
+                return recruitService.getAll();
               }]}
     })
     .state('posts', {
