@@ -21,6 +21,18 @@ myApp.controller('PortfolioCtrl', ['$scope', '$http', function($scope, $http){
       intro:'안녕하세요',
       mainImageLink:'images/profile4.jpg',
       property:'배우'
+    },
+    {
+      name:'audrey hepburn',
+      intro:'Hi!',
+      mainImageLink:'images/profile5.jpg',
+      property:'Actress'
+    },
+    {
+      name:'Kei kim',
+      intro:'Ah Choo!',
+      mainImageLink:'images/kei.jpg',
+      property:'Singer'
     }
   ];
 }]);
