@@ -33,6 +33,48 @@ myApp.controller('PortfolioCtrl', ['$scope', '$http', function($scope, $http){
       intro:'Ah Choo!',
       mainImageLink:'images/kei.jpg',
       property:'Singer'
+    },
+    {
+      name:'Chugha Kim',
+      intro:'Give me some!',
+      mainImageLink:'images/chungha.jpg',
+      property:'Singer & Dancer'
+    },
+    {
+      name:'Yujung choi',
+      intro:'Ggul ggeok~',
+      mainImageLink:'images/yujung.jpg',
+      property:'Singer'
+    },
+    {
+      name:'Sejung Kim',
+      intro:'Sense',
+      mainImageLink:'images/Sejung.jpg',
+      property:'Singer'
+    },
+    {
+      name:'Sohye Kim',
+      intro:'Penguin',
+      mainImageLink:'images/sohye.jpg',
+      property:'Actress'
+    },
+    {
+      name:'Chaeyeon Jung',
+      intro:'Dia',
+      mainImageLink:'images/chaeyeon.jpg',
+      property:'Singer'
+    },
+    {
+      name:'Doyeun Jung',
+      intro:'Daughter of Kangwon',
+      mainImageLink:'images/doyeun.jpg',
+      property:'Singer'
+    },
+    {
+      name:'Nayoung Lim',
+      intro:'Stone',
+      mainImageLink:'images/na0.jpg',
+      property:'Singer'
     }
-  ];
+   ];
 }]);
