@@ -18,9 +18,9 @@ myApp.controller('PortfolioCtrl', ['$scope', function($scope){
       property:'배우'
     },
     {
-      name:'김부장',
+      name:'케니스 최',
       intro:'안녕하세요',
-      mainImageLink:'images/profile3.jpg',
+      mainImageLink:'images/profile4.jpg',
       property:'배우'
     }
   ];
