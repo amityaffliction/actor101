@@ -69,6 +69,11 @@ myApp.config(['$stateProvider','$urlRouterProvider',
           $state.go('home');
         })
       }]
+    })
+    .state('details', {
+      url: '/details',
+      templateUrl: 'details/_details.html',
+      controller: 'DetailCtrl'
     });
 
   $urlRouterProvider.otherwise('home');

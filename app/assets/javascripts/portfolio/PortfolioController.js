@@ -1,9 +1,8 @@
 var myApp = angular.module('flapperNews');
 
-myApp.controller('PortfolioCtrl', ['$scope', function($scope){
+myApp.controller('PortfolioCtrl', ['$scope', '$http', function($scope, $http){
   $scope.test = 'Simple Portfolio Website';
 
-  console.log('PortfolioCtrl');
    $scope.profiles = [
     {
       name:'김지수',

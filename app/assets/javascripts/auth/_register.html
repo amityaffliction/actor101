@@ -1,16 +1,52 @@
-<div class="page-header">
-  <h1>Register</h1>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+            <span class="mdl-layout__title">
+                <div class="portfolio-logo" ></div>
+            </span>
+        </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+              <a class="mdl-navigation__link" href="#/auto/login">로그인</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+          <a class="mdl-navigation__link" href="#/auto/login">로그인</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <form ng-submit="register()">
+        <div class="login-page">
+          <div class="form">
+            <form class="register-form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+              </div>
+              <div class="input-group">
+                <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+              </div>
+              <button>Register</button>
+            </form>
+          </div>
+        </div>
+      </form>
+
+      <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">Actor</div>
+          </div>
+          <div class="mdl-mini-footer__right-section">
+              <ul class="mdl-mini-footer__link-list">
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+          </div>
+      </footer>
+    </main>
 </div>
 
-<form ng-submit="register()">
-  <div class="input-group">
-    <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
-  </div>
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="Username" ng-model="user.username">
-  </div>
-  <div class="input-group">
-    <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
-  </div>
-  <input type="submit" class="btn btn-default" value="Register">
-</form>
