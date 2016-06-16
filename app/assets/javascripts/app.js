@@ -74,6 +74,11 @@ myApp.config(['$stateProvider','$urlRouterProvider',
       url: '/details',
       templateUrl: 'details/_details.html',
       controller: 'DetailCtrl'
+    })
+    .state('jisu', {
+      url: '/jisu',
+      templateUrl: 'jisu/_jisu.html',
+      controller: 'JisuCtrl'
     });
 
   $urlRouterProvider.otherwise('home');
